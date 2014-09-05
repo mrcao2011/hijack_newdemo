@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6CF187419B814EC00304B1C /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF187319B814EC00304B1C /* EAGLView.m */; };
+		C6CF187619B8151800304B1C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CF187519B8151800304B1C /* Accelerate.framework */; };
+		C6CF187819B8152B00304B1C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CF187719B8152B00304B1C /* OpenGLES.framework */; };
+		C6CF187A19B8153E00304B1C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CF187919B8153E00304B1C /* QuartzCore.framework */; };
+		C6CF188219B8181C00304B1C /* fft_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF187C19B8181C00304B1C /* fft_off.png */; };
+		C6CF188319B8181C00304B1C /* fft_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF187D19B8181C00304B1C /* fft_on.png */; };
+		C6CF188419B8181C00304B1C /* mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF187E19B8181C00304B1C /* mute_off.png */; };
+		C6CF188519B8181C00304B1C /* mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF187F19B8181C00304B1C /* mute_on.png */; };
+		C6CF188619B8181C00304B1C /* oscilloscope.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF188019B8181C00304B1C /* oscilloscope.png */; };
+		C6CF188719B8181C00304B1C /* sonogram.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF188119B8181C00304B1C /* sonogram.png */; };
+		C6CF188A19B81AC600304B1C /* FFTHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CF188919B81AC600304B1C /* FFTHelper.mm */; };
+		C6CF188E19B81AD000304B1C /* mo_audio.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6CF188C19B81AD000304B1C /* mo_audio.mm */; };
+		C6CF189119B8372100304B1C /* FFTBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6CF188F19B8372100304B1C /* FFTBufferManager.cpp */; };
+		C6CF189719B8375C00304B1C /* rad2fft.c in Sources */ = {isa = PBXBuildFile; fileRef = C6CF189319B8375C00304B1C /* rad2fft.c */; };
+		C6CF189819B8375C00304B1C /* SpectrumAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6CF189519B8375C00304B1C /* SpectrumAnalysis.cpp */; };
+		C6CF189A19B85C1600304B1C /* button_press.caf in Resources */ = {isa = PBXBuildFile; fileRef = C6CF189919B85C1600304B1C /* button_press.caf */; };
+		CE63CBEC183761B100FC40E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE63CBEB183761B100FC40E7 /* UIKit.framework */; };
+		CE63CBEE183761B100FC40E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE63CBED183761B100FC40E7 /* Foundation.framework */; };
+		CE63CBF0183761B100FC40E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE63CBEF183761B100FC40E7 /* CoreGraphics.framework */; };
+		CE63CBF6183761B100FC40E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE63CBF4183761B100FC40E7 /* InfoPlist.strings */; };
+		CE63CBF8183761B100FC40E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63CBF7183761B100FC40E7 /* main.m */; };
+		CE63CBFC183761B100FC40E7 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE63CBFB183761B100FC40E7 /* AppDelegate.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE63CBFE183761B100FC40E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63CBFD183761B100FC40E7 /* Default.png */; };
+		CE63CC00183761B100FC40E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63CBFF183761B100FC40E7 /* Default@2x.png */; };
+		CE63CC02183761B100FC40E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63CC01183761B100FC40E7 /* Default-568h@2x.png */; };
+		CE63CC0B183761C900FC40E7 /* libHiJack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE63CC09183761C900FC40E7 /* libHiJack.a */; };
+		CE691C8E183768660047F74C /* aurio_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE691C81183768660047F74C /* aurio_helper.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C8F183768660047F74C /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE691C83183768660047F74C /* CADebugMacros.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C90183768660047F74C /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE691C85183768660047F74C /* CADebugPrintf.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C91183768660047F74C /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE691C88183768660047F74C /* CAStreamBasicDescription.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C92183768660047F74C /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE691C8A183768660047F74C /* CAXException.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C93183768660047F74C /* HiJackMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE691C8D183768660047F74C /* HiJackMgr.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C9418376D3E0047F74C /* HiJackMgr.h in Sources */ = {isa = PBXBuildFile; fileRef = CE691C8C183768660047F74C /* HiJackMgr.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE691C9518376D3E0047F74C /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = CE63CBFA183761B100FC40E7 /* AppDelegate.h */; };
+		CE9457BE1837641800CEA865 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9457BD1837641800CEA865 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6CF187219B814EC00304B1C /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = hijack_demo/EAGLView.h; sourceTree = "<group>"; };
+		C6CF187319B814EC00304B1C /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EAGLView.m; path = hijack_demo/EAGLView.m; sourceTree = "<group>"; };
+		C6CF187519B8151800304B1C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C6CF187719B8152B00304B1C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C6CF187919B8153E00304B1C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C6CF187C19B8181C00304B1C /* fft_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fft_off.png; path = hijack_demo/images/fft_off.png; sourceTree = "<group>"; };
+		C6CF187D19B8181C00304B1C /* fft_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fft_on.png; path = hijack_demo/images/fft_on.png; sourceTree = "<group>"; };
+		C6CF187E19B8181C00304B1C /* mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mute_off.png; path = hijack_demo/images/mute_off.png; sourceTree = "<group>"; };
+		C6CF187F19B8181C00304B1C /* mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mute_on.png; path = hijack_demo/images/mute_on.png; sourceTree = "<group>"; };
+		C6CF188019B8181C00304B1C /* oscilloscope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oscilloscope.png; path = hijack_demo/images/oscilloscope.png; sourceTree = "<group>"; };
+		C6CF188119B8181C00304B1C /* sonogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sonogram.png; path = hijack_demo/images/sonogram.png; sourceTree = "<group>"; };
+		C6CF188819B81AC600304B1C /* FFTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTHelper.h; path = hijack_demo/FFTHelper.h; sourceTree = "<group>"; };
+		C6CF188919B81AC600304B1C /* FFTHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FFTHelper.mm; path = hijack_demo/FFTHelper.mm; sourceTree = "<group>"; };
+		C6CF188B19B81AD000304B1C /* mo_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mo_audio.h; path = hijack_demo/mo_audio.h; sourceTree = "<group>"; };
+		C6CF188C19B81AD000304B1C /* mo_audio.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = mo_audio.mm; path = hijack_demo/mo_audio.mm; sourceTree = "<group>"; };
+		C6CF188D19B81AD000304B1C /* mo_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mo_def.h; path = hijack_demo/mo_def.h; sourceTree = "<group>"; };
+		C6CF188F19B8372100304B1C /* FFTBufferManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFTBufferManager.cpp; path = hijack_demo/FFTBufferManager.cpp; sourceTree = "<group>"; };
+		C6CF189019B8372100304B1C /* FFTBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTBufferManager.h; path = hijack_demo/FFTBufferManager.h; sourceTree = "<group>"; };
+		C6CF189319B8375C00304B1C /* rad2fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rad2fft.c; sourceTree = "<group>"; };
+		C6CF189419B8375C00304B1C /* rad2fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rad2fft.h; sourceTree = "<group>"; };
+		C6CF189519B8375C00304B1C /* SpectrumAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpectrumAnalysis.cpp; sourceTree = "<group>"; };
+		C6CF189619B8375C00304B1C /* SpectrumAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectrumAnalysis.h; sourceTree = "<group>"; };
+		C6CF189919B85C1600304B1C /* button_press.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = button_press.caf; path = hijack_demo/button_press.caf; sourceTree = "<group>"; };
+		CE63CBE8183761B100FC40E7 /* HiJack_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiJack_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE63CBEB183761B100FC40E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE63CBED183761B100FC40E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE63CBEF183761B100FC40E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE63CBF3183761B100FC40E7 /* HiJack_demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HiJack_demo-Info.plist"; sourceTree = "<group>"; };
+		CE63CBF5183761B100FC40E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE63CBF7183761B100FC40E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE63CBF9183761B100FC40E7 /* HiJack_demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiJack_demo-Prefix.pch"; sourceTree = "<group>"; };
+		CE63CBFA183761B100FC40E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE63CBFB183761B100FC40E7 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CE63CBFD183761B100FC40E7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE63CBFF183761B100FC40E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE63CC01183761B100FC40E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE63CC09183761C900FC40E7 /* libHiJack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHiJack.a; path = HiJack_demo/libHiJack.a; sourceTree = "<group>"; };
+		CE691C81183768660047F74C /* aurio_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aurio_helper.cpp; sourceTree = "<group>"; };
+		CE691C82183768660047F74C /* aurio_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aurio_helper.h; sourceTree = "<group>"; };
+		CE691C83183768660047F74C /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		CE691C84183768660047F74C /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		CE691C85183768660047F74C /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		CE691C86183768660047F74C /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		CE691C87183768660047F74C /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		CE691C88183768660047F74C /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		CE691C89183768660047F74C /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		CE691C8A183768660047F74C /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		CE691C8B183768660047F74C /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		CE691C8C183768660047F74C /* HiJackMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiJackMgr.h; sourceTree = "<group>"; };
+		CE691C8D183768660047F74C /* HiJackMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiJackMgr.mm; sourceTree = "<group>"; };
+		CE9457BD1837641800CEA865 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE63CBE5183761B100FC40E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CF187A19B8153E00304B1C /* QuartzCore.framework in Frameworks */,
+				C6CF187819B8152B00304B1C /* OpenGLES.framework in Frameworks */,
+				C6CF187619B8151800304B1C /* Accelerate.framework in Frameworks */,
+				CE9457BE1837641800CEA865 /* AudioToolbox.framework in Frameworks */,
+				CE63CBEC183761B100FC40E7 /* UIKit.framework in Frameworks */,
+				CE63CBEE183761B100FC40E7 /* Foundation.framework in Frameworks */,
+				CE63CBF0183761B100FC40E7 /* CoreGraphics.framework in Frameworks */,
+				CE63CC0B183761C900FC40E7 /* libHiJack.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6CF187B19B8181C00304B1C /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			path = hijack_demo/images;
+			sourceTree = "<group>";
+		};
+		C6CF189219B8375C00304B1C /* fft */ = {
+			isa = PBXGroup;
+			children = (
+				C6CF189319B8375C00304B1C /* rad2fft.c */,
+				C6CF189419B8375C00304B1C /* rad2fft.h */,
+				C6CF189519B8375C00304B1C /* SpectrumAnalysis.cpp */,
+				C6CF189619B8375C00304B1C /* SpectrumAnalysis.h */,
+			);
+			name = fft;
+			path = hijack_demo/fft;
+			sourceTree = "<group>";
+		};
+		CE63CBDF183761B100FC40E7 = {
+			isa = PBXGroup;
+			children = (
+				C6CF189919B85C1600304B1C /* button_press.caf */,
+				C6CF189219B8375C00304B1C /* fft */,
+				C6CF188F19B8372100304B1C /* FFTBufferManager.cpp */,
+				C6CF189019B8372100304B1C /* FFTBufferManager.h */,
+				C6CF188B19B81AD000304B1C /* mo_audio.h */,
+				C6CF188C19B81AD000304B1C /* mo_audio.mm */,
+				C6CF188D19B81AD000304B1C /* mo_def.h */,
+				C6CF188819B81AC600304B1C /* FFTHelper.h */,
+				C6CF188919B81AC600304B1C /* FFTHelper.mm */,
+				C6CF187C19B8181C00304B1C /* fft_off.png */,
+				C6CF187E19B8181C00304B1C /* mute_off.png */,
+				C6CF187F19B8181C00304B1C /* mute_on.png */,
+				C6CF188019B8181C00304B1C /* oscilloscope.png */,
+				C6CF187D19B8181C00304B1C /* fft_on.png */,
+				C6CF188119B8181C00304B1C /* sonogram.png */,
+				C6CF187B19B8181C00304B1C /* images */,
+				C6CF187219B814EC00304B1C /* EAGLView.h */,
+				C6CF187319B814EC00304B1C /* EAGLView.m */,
+				CE63CBF1183761B100FC40E7 /* HiJack_demo */,
+				CE63CBEA183761B100FC40E7 /* Frameworks */,
+				CE63CBE9183761B100FC40E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE63CBE9183761B100FC40E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE63CBE8183761B100FC40E7 /* HiJack_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE63CBEA183761B100FC40E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6CF187919B8153E00304B1C /* QuartzCore.framework */,
+				C6CF187719B8152B00304B1C /* OpenGLES.framework */,
+				C6CF187519B8151800304B1C /* Accelerate.framework */,
+				CE63CC09183761C900FC40E7 /* libHiJack.a */,
+				CE9457BD1837641800CEA865 /* AudioToolbox.framework */,
+				CE63CBEB183761B100FC40E7 /* UIKit.framework */,
+				CE63CBED183761B100FC40E7 /* Foundation.framework */,
+				CE63CBEF183761B100FC40E7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE63CBF1183761B100FC40E7 /* HiJack_demo */ = {
+			isa = PBXGroup;
+			children = (
+				CE691C80183768660047F74C /* lib */,
+				CE63CBFA183761B100FC40E7 /* AppDelegate.h */,
+				CE63CBFB183761B100FC40E7 /* AppDelegate.mm */,
+				CE63CBF2183761B100FC40E7 /* Supporting Files */,
+			);
+			path = HiJack_demo;
+			sourceTree = "<group>";
+		};
+		CE63CBF2183761B100FC40E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE63CBF3183761B100FC40E7 /* HiJack_demo-Info.plist */,
+				CE63CBF4183761B100FC40E7 /* InfoPlist.strings */,
+				CE63CBF7183761B100FC40E7 /* main.m */,
+				CE63CBF9183761B100FC40E7 /* HiJack_demo-Prefix.pch */,
+				CE63CBFD183761B100FC40E7 /* Default.png */,
+				CE63CBFF183761B100FC40E7 /* Default@2x.png */,
+				CE63CC01183761B100FC40E7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE691C80183768660047F74C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CE691C81183768660047F74C /* aurio_helper.cpp */,
+				CE691C82183768660047F74C /* aurio_helper.h */,
+				CE691C83183768660047F74C /* CADebugMacros.cpp */,
+				CE691C84183768660047F74C /* CADebugMacros.h */,
+				CE691C85183768660047F74C /* CADebugPrintf.cpp */,
+				CE691C86183768660047F74C /* CADebugPrintf.h */,
+				CE691C87183768660047F74C /* CAMath.h */,
+				CE691C88183768660047F74C /* CAStreamBasicDescription.cpp */,
+				CE691C89183768660047F74C /* CAStreamBasicDescription.h */,
+				CE691C8A183768660047F74C /* CAXException.cpp */,
+				CE691C8B183768660047F74C /* CAXException.h */,
+				CE691C8C183768660047F74C /* HiJackMgr.h */,
+				CE691C8D183768660047F74C /* HiJackMgr.mm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE63CBE7183761B100FC40E7 /* HiJack_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE63CC05183761B100FC40E7 /* Build configuration list for PBXNativeTarget "HiJack_demo" */;
+			buildPhases = (
+				CE63CBE4183761B100FC40E7 /* Sources */,
+				CE63CBE5183761B100FC40E7 /* Frameworks */,
+				CE63CBE6183761B100FC40E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiJack_demo;
+			productName = HiJack_demo;
+			productReference = CE63CBE8183761B100FC40E7 /* HiJack_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE63CBE0183761B100FC40E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Junsheng;
+				TargetAttributes = {
+					CE63CBE7183761B100FC40E7 = {
+						DevelopmentTeam = YQ76XQVKDQ;
+					};
+				};
+			};
+			buildConfigurationList = CE63CBE3183761B100FC40E7 /* Build configuration list for PBXProject "hijack_demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE63CBDF183761B100FC40E7;
+			productRefGroup = CE63CBE9183761B100FC40E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE63CBE7183761B100FC40E7 /* HiJack_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE63CBE6183761B100FC40E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CF188219B8181C00304B1C /* fft_off.png in Resources */,
+				C6CF188719B8181C00304B1C /* sonogram.png in Resources */,
+				CE63CBF6183761B100FC40E7 /* InfoPlist.strings in Resources */,
+				C6CF188619B8181C00304B1C /* oscilloscope.png in Resources */,
+				CE63CBFE183761B100FC40E7 /* Default.png in Resources */,
+				C6CF188419B8181C00304B1C /* mute_off.png in Resources */,
+				C6CF188319B8181C00304B1C /* fft_on.png in Resources */,
+				C6CF188519B8181C00304B1C /* mute_on.png in Resources */,
+				C6CF189A19B85C1600304B1C /* button_press.caf in Resources */,
+				CE63CC00183761B100FC40E7 /* Default@2x.png in Resources */,
+				CE63CC02183761B100FC40E7 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE63CBE4183761B100FC40E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CF188A19B81AC600304B1C /* FFTHelper.mm in Sources */,
+				CE691C9418376D3E0047F74C /* HiJackMgr.h in Sources */,
+				CE691C9518376D3E0047F74C /* AppDelegate.h in Sources */,
+				CE63CBF8183761B100FC40E7 /* main.m in Sources */,
+				C6CF189119B8372100304B1C /* FFTBufferManager.cpp in Sources */,
+				CE691C90183768660047F74C /* CADebugPrintf.cpp in Sources */,
+				CE691C8E183768660047F74C /* aurio_helper.cpp in Sources */,
+				CE691C8F183768660047F74C /* CADebugMacros.cpp in Sources */,
+				CE691C93183768660047F74C /* HiJackMgr.mm in Sources */,
+				C6CF187419B814EC00304B1C /* EAGLView.m in Sources */,
+				C6CF189719B8375C00304B1C /* rad2fft.c in Sources */,
+				CE63CBFC183761B100FC40E7 /* AppDelegate.mm in Sources */,
+				C6CF189819B8375C00304B1C /* SpectrumAnalysis.cpp in Sources */,
+				CE691C92183768660047F74C /* CAXException.cpp in Sources */,
+				CE691C91183768660047F74C /* CAStreamBasicDescription.cpp in Sources */,
+				C6CF188E19B81AD000304B1C /* mo_audio.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE63CBF4183761B100FC40E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE63CBF5183761B100FC40E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE63CC03183761B100FC40E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE63CC04183761B100FC40E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE63CC06183761B100FC40E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HiJack_demo/HiJack_demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = "HiJack_demo/HiJack_demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HiJack_demo\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE63CC07183761B100FC40E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HiJack_demo/HiJack_demo-Prefix.pch";
+				INFOPLIST_FILE = "HiJack_demo/HiJack_demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HiJack_demo\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE63CBE3183761B100FC40E7 /* Build configuration list for PBXProject "hijack_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63CC03183761B100FC40E7 /* Debug */,
+				CE63CC04183761B100FC40E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE63CC05183761B100FC40E7 /* Build configuration list for PBXNativeTarget "HiJack_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63CC06183761B100FC40E7 /* Debug */,
+				CE63CC07183761B100FC40E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE63CBE0183761B100FC40E7 /* Project object */;
+}
